@@ -1,3 +1,6 @@
+
+/*GitHub repo: https://github.com/TilenOkretic/c */
+
 #include <stdio.h>
 
 float kelvin(float temp) {
