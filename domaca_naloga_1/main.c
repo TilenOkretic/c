@@ -1,14 +1,23 @@
 #include <stdio.h>
 
-
 float kelvin(float temp) {
     return temp + 273.15;
 }
+
 
 float fahrenheit(float temp){
     return 32.0 + temp*(1.0*9.0/5.0);
 }
 
+/* 
+  * Funkcija, ki sprejme tempreaturo kot prvi argument, in nacin pretvorbe kot drugi argument
+  * in na podlagi vnesenega vrne vrednost (tipa float) koverzije
+  
+  --> temp  :float: # vnesena tempreatura
+  --> izbor :char:  # tip konverzije 
+  
+  <-- :float:       # vrednost, ki je konverterana v izbrani 'izbor'
+*/
 
 float konverzija(float temp, char izbor) {
     switch(izbor){
@@ -26,11 +35,14 @@ int main()
 {
     
     float celzija;
+    char ch;
+
     printf("Vnesi stopinjev stopinjah celzija: ");
     scanf("%f", &celzija);
+    
     printf("Vnesi tip konvevrzije  [k ... pretvorba v kelvin] [f ... pretvorba v fahrenheit]:\n");
-    char ch;
     scanf(" %c", &ch);
+    
     float out = konverzija(celzija, ch);
     
     switch(ch){
