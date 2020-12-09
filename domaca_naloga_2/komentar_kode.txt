@@ -1,0 +1,15 @@
+//////////////////////////////////////////////////
+
+    PRVI DEL KOODE
+
+//////////////////////////////////////////////////
+
+    1. Kar je z temno rdeco barvo oziroma zeleno in je med /* in */ je komentar
+    2. Kar je z modro npr. float, char, ipd. ponazarja tip spremenljivke npr. float -> float, char -> charaacter, ipd. 
+    3. Kar je z rumeno so imena funkcij npr. kelvin, konverzija, ipd.
+
+//////////////////////////////////////////////////
+
+    DRUGI DEL KOODE
+
+//////////////////////////////////////////////////
