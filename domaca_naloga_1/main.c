@@ -13,7 +13,7 @@ int main()
     float celzija;
     char ch;
 
-    printf("Vnesi stopinjev stopinjah celzija: ");
+    printf("Vnesi stopinje v stopinjah celzija: ");
     scanf("%f", &celzija);
     
     printf("Vnesi tip konvevrzije  [k ... pretvorba v kelvin] [f ... pretvorba v fahrenheit]:\n");
