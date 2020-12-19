@@ -1,6 +1,4 @@
 /*
-    Narisi se UML diagram
-    in oddaj nalogo
 */
 
 #include <stdio.h>
