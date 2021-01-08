@@ -21,6 +21,23 @@ void print_film_attrib(struct film *elm){
     puts(str);
 }
 
+struct film create_film(void) {
+  struct film elm;
+  
+   puts("Vnesi path do datoteke filma:");
+   gets(elm.path_do_datoteke_filma);
+   puts("Vnesi path do podnapisov filma:");
+   gets(elm.path_do_podnapisov);
+   puts("Vnesi path do torrent-a filma:");
+   gets(elm.path_do_torrent_datoteke);
+   puts("Vnesi dolzino filma:");
+   scanf("%f", &elm.dolzina_filma);
+   getchar();
+  
+   return elm;
+}
+
+
 
 int main()
 {
@@ -34,15 +51,7 @@ int main()
     
     for(int i=0;i<film_st;i++)
     {
-        puts("Vnesi path do datoteke filma:");
-        gets(zbirka[i].path_do_datoteke_filma);
-        puts("Vnesi path do podnapisov filma:");
-        gets(zbirka[i].path_do_podnapisov);
-        puts("Vnesi path do torrent-a filma:");
-        gets(zbirka[i].path_do_torrent_datoteke);
-        puts("Vnesi dolzino filma:");
-        scanf("%f", zbirka[i].dolzina_filma);
-        getchar();
+        zbirka[i] = create_film();
     }
     puts("Kateri film bi rad preveril? Vnesi stevilko (prvi film ima stevilko 0, naslednji 1, itd)?");
     int film_id;
